@@ -12,7 +12,6 @@ jobs:
           node-version: '20'
       - run: npm install
       - run: npm run build
-      - run: ls
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
